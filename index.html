@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <title>Zásady ochrany osobných údajov</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 700px;
+      margin: auto;
+      padding: 2em;
+      line-height: 1.6;
+      background-color: hsl(var(--background));
+      color: hsl(var(--foreground));
+    }
+    h1 {
+      color: hsl(var(--primary));
+    }
+    a {
+      color: hsl(var(--primary));
+    }
+    /* Add HSL variables for theme consistency, if this page is ever integrated more closely */
+    :root {
+        --background: 220 13% 12%; 
+        --foreground: 210 40% 96%;
+        --primary: 271 76% 32%;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: hsl(220, 13%, 12%); /* Dark grayish blue */
+            color: hsl(210, 40%, 96%); /* Light gray/off-white */
+        }
+        h1 {
+            color: hsl(271, 76%, 52%); /* Lighter purple for dark mode readability if primary is too dark */
+        }
+        a {
+            color: hsl(271, 76%, 62%);
+        }
+    }
+  </style>
+</head>
+<body>
+  <h1>Zásady ochrany osobných údajov</h1>
+  <p>
+    Aplikácia <strong>Forest Echoes</strong> (Šepot Lesa) nezbiera, neukladá ani nespracúva žiadne osobné údaje používateľa.
+    Nepoužívame žiadne sledovacie nástroje, analytické systémy ani externé služby, ktoré by zhromažďovali informácie o používateľovi.
+  </p>
+  <p>
+    Stav hry (aktuálny track, navštívené tracky, objavené kódy) sa ukladá výhradne lokálne vo vašom prehliadači (pomocou localStorage) a tieto údaje nie sú odosielané na žiadne servery.
+  </p>
+  <p>
+    V prípade akýchkoľvek otázok nás môžete kontaktovať na: <strong>vldseman@gmail.com</strong>
+  </p>
+  <p>Posledná aktualizácia: 12. máj 2024</p>
+</body>
+</html>
